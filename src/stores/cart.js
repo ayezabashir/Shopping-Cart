@@ -18,8 +18,20 @@ const cartSlice = createSlice({
         state.items.push({ productId, quantity });
       }
       localStorage.setItem("carts", JSON.stringify(state.items));
-    }
+    },
+    changeQuantity(state, action) {
+      const { productId, quantity } = action.payload;
+      const indexProductId = state.items.findIndex(
+        (item) => item.productId === productId
+      );
+      if (quantity > 0) {
+        state.items[indexProductId].quantity = quantity;
+      } else {
+        state.items = (state.items).filter(item => item.productId !== productId);
+      }
+      localStorage.setItem("carts", JSON.stringify(state.items));
+    },
   },
 });
-export const { addToCart} = cartSlice.actions;
+export const { addToCart, changeQuantity} = cartSlice.actions;
 export default cartSlice.reducer;

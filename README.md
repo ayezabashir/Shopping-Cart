@@ -43,4 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Ayeza Bashir]([https://ayeza-bashir-portfolio.vercel.app/](https://ayeza-bashir-portfolio.vercel.app/))
+Made with ❤️ by [Ayeza Bashir](https://ayeza-bashir-portfolio.vercel.app/)

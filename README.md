@@ -1,16 +1,46 @@
-# React + Vite
+# Shopping Cart Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive shopping cart web application built with **React**, **Redux Toolkit**, **React Router**, **Vite**, and **Tailwind CSS**. Browse jewelry products, view details, and manage your cart with a smooth user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 Add, remove, and update product quantities in the cart
+- 🔍 Product detail pages with adjustable quantity
+- ⚡ Fast development with Vite and HMR
+- 🎨 Responsive UI styled with Tailwind CSS
+- 💾 Cart state persisted in localStorage
+- 🗂️ Modular React component structure
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+src
+├── app
+│   ├── store.js
+│   └── App.jsx
+├── features
+│   ├── cart
+│   │   ├── cartSlice.js
+│   │   └── Cart.jsx
+│   └── products
+│       ├── productsSlice.js
+│       └── Products.jsx
+├── index.css
+└── main.jsx
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository: `git clone https://github.com/yourusername/shopping-cart.git`
+2. Navigate to the project directory: `cd shopping-cart`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
+5. Open your browser and visit `http://localhost:5173`
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with ❤️ by [Ayeza Bashir]([https://ayeza-bashir-portfolio.vercel.app/](https://ayeza-bashir-portfolio.vercel.app/))

@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '../stores/cart';
 
 const ProductCard = (props) => {
-    const carts = useSelector((store) => store.cart.items);
     const { id, name, price, img, slug } = props.data;
     const dispatch = useDispatch();
     const handleAddToCart = () => {
